@@ -10,7 +10,7 @@ import java.util.List;
 public class Main {
     public void writeToFile(ArrayList<Book> book, ArrayList<Tape> tape){
         try {
-            FileWriter fw = new FileWriter("data.txt", true);
+            FileWriter fw = new FileWriter("src\\main\\java\\Buoi5.B1\\data.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(book.toString());
             bw.newLine();
@@ -28,7 +28,7 @@ public class Main {
     public List<Book> readBookFromFile(){
         List<Book> bookList = new ArrayList<Book>();
         try {
-            FileReader fr = new FileReader("data.txt");
+            FileReader fr = new FileReader("src\\main\\java\\Buoi5\\B1\\data.txt");
             BufferedReader br = new BufferedReader(fr);
             String line;
             while((line = br.readLine()) != null){
@@ -47,7 +47,7 @@ public class Main {
         List<Tape> tapeList = new ArrayList<Tape>();
         boolean readingTape = false;
         try {
-            FileReader fr = new FileReader("data.txt");
+            FileReader fr = new FileReader("src\\main\\java\\Buoi5\\B1\\data.txt");
             BufferedReader br = new BufferedReader(fr);
             String line;
             while((line = br.readLine()) != null){
