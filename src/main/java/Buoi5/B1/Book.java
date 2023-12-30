@@ -1,4 +1,4 @@
-package Buoi5;
+package Buoi5.B1;
 
 public class Book extends Publication {
     private String page;

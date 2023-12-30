@@ -1,0 +1,3 @@
+[Book details: 1, 1, 1]
+-------------
+[Tape details: 2, 2, 2]

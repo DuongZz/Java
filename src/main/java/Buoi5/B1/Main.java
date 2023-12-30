@@ -1,4 +1,4 @@
-package Buoi5;
+package Buoi5.B1;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +10,7 @@ import java.util.List;
 public class Main {
     public void writeToFile(ArrayList<Book> book, ArrayList<Tape> tape){
         try {
-            FileWriter fw = new FileWriter("src\\main\\java\\Buoi5.B1\\data.txt", true);
+            FileWriter fw = new FileWriter("src\\main\\java\\Buoi5\\B1\\data.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(book.toString());
             bw.newLine();

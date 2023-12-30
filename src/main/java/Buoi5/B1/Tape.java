@@ -1,4 +1,4 @@
-package Buoi5;
+package Buoi5.B1;
 
 public class Tape extends Publication {
     private String playingTime;

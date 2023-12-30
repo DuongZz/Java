@@ -13,9 +13,7 @@ import javax.swing.table.DefaultTableModel;
 public class BookPage extends javax.swing.JFrame {
 
     List<Book> bookList = new ArrayList<Book>();
-    private HomePage homePage;
     Object[][] book;
-    Object[][] tape;
 
     public BookPage(ArrayList<Book> bookList) {
         initComponents();
@@ -93,15 +91,19 @@ public class BookPage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 51, 102));
         jLabel1.setText("Book Management Page");
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
         jLabel2.setText("Name");
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
         jLabel3.setText("Price");
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 0, 51));
         jLabel4.setText("Page");
 
         jTextName1.addActionListener(new java.awt.event.ActionListener() {
@@ -111,6 +113,7 @@ public class BookPage extends javax.swing.JFrame {
         });
 
         jButtonSave.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jButtonSave.setForeground(new java.awt.Color(255, 0, 51));
         jButtonSave.setText("Save");
         jButtonSave.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -124,6 +127,7 @@ public class BookPage extends javax.swing.JFrame {
         });
 
         bookPageBack.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        bookPageBack.setForeground(new java.awt.Color(255, 0, 51));
         bookPageBack.setText("Back");
         bookPageBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -145,6 +149,7 @@ public class BookPage extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("Book");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
